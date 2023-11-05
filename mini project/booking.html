@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking slot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- <link rel="stylesheet" href="/booking.css"> -->
+</head>
+<body>
+
+
+    <nav>
+        <div class="dash">
+           
+             <h5>Admin</h5>
+                <i class="fa-solid fa-bars"></i>
+        </div>
+      
+        <ul>
+            <li>
+                <i class="fa-solid fa-home"></i>
+                    <a href="index.html">Dashboard</a>
+            </li>
+           <li>
+                    <i class="fa-solid fa-car"></i>
+                    <a href="#">Add vehicle</a>
+           </li>
+            <li>
+                <i class="fa-solid fa-user"></i>
+                <a href="#" id="record">Records</a>
+            </li>
+           
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="https://www.google.co.in/maps/place/Park+College+Of+Engineering+And+Technology/@11.0933284,77.161312,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba8ff9811e4f389:0x19d353a0c59d2275!8m2!3d11.0933231!4d77.1638869!16zL20vMDQwYmht">Location</a>
+            
+            </li>
+        </ul>
+    </nav>
+<div class="content">
+    <div class="slot">
+        <h4>Vehicle Parking Booking System </h4>
+        <i class="fa-solid fa-car"></i><h3>Select Sloting No</h3>
+        <div class="avail">
+            </i><p >Available</p> <button type="button">P1</button>
+       </div>
+       <div class="booked">
+        <p>Already Booked</p><button type="button">P2</button>
+       </div>
+    </div>
+    <div class="select">
+        <div class="section-a">
+            <p>A-LOT</p>
+            <button type="button">slot 1</button><input type="checkbox">
+            <button type="button">slot 2</button><input type="checkbox">
+            <button type="button">slot 3</button><input type="checkbox">
+            <button type="button" id="slot4">slot 4</button><input type="checkbox" id="check4">
+            <button type="button">slot 5</button><input type="checkbox">
+        </div>
+       <div class="section-a all" >
+        <button type="button">slot 6</button><input type="checkbox" >
+        <button type="button" id="slot7">slot 7</button><input type="checkbox" id="check7">
+        <button type="button">slot 8</button><input type="checkbox">
+        <button type="button">slot 9</button><input type="checkbox">
+        <button type="button">slot 10</button><input type="checkbox">
+       </div>
+       <div class="section-b">
+        <p>B-LOT</p>
+        <button type="button">slot 11</button><input type="checkbox">
+        <button type="button" id="slot12">slot 12</button><input type="checkbox" id="check12">
+        <button type="button">slot 13</button><input type="checkbox">
+        <button type="button">slot 14</button><input type="checkbox">
+        <button type="button">slot 15</button><input type="checkbox">
+    </div>
+   <div class="section-b allb">
+    <button type="button">slot 16</button><input type="checkbox">
+    <button type="button">slot 17</button><input type="checkbox">
+    <button type="button" id="slot18">slot 18</button><input type="checkbox" id="check18">
+    <button type="button">slot 19</button><input type="checkbox">
+    <button type="button">slot 20</button><input type="checkbox">
+   </div>
+    </div>
+    <!-- <main class="main">
+        <h4>Booking charges</h4>
+        <div class="val">
+
+         <input type="number" id="hour" placeholder="1 hour">
+         <button type="submit" id="btn">click</button>
+        </div>
+        <button type="button" id="amt">R.s 30</button>
+    </main> -->
+    
+    <form action="">
+       <p>Booking Registration</p>
+     <div class="form name">
+        <i class="fa-solid fa-user"></i>
+        <label for="name">Your Name :</label>
+        <input type="text" id="name" >
+     </div>
+     <div class="form mobile">
+        <i class="fa-solid fa-phone"></i>
+        <label for="mobile">Mobile No :</label>
+        <input type="tel" id="mobile">
+     </div>
+     <div class="form date">
+        <i class="fa-solid fa-calendar-days"></i>
+        <label for="date">Date :</label>
+        <input type="date" id="date">
+    </div>
+     <div class="form slotno">
+        <i class="fa-solid fa-car"></i>
+        <label for="slotno">slot No :</label>
+        <input type="number" id="slotno">
+    </div>
+    <div class="form arrive">
+       
+        <label for="arrive">Arrival Time :</label>
+        <input type="time" id="arrive">
+        
+    </div>
+    <div class="btn">
+        <button type="submit">Proceed to Booking</button>
+    </div>
+     </form>
+    
+</div>
+
+   <!-- <script src="/booking .js"></script> -->
+   <style>
+      
+    *{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+   
+}
+body{
+    background-image: url('./images/mancar.jpg');
+   
+    background-position:center;
+    
+}
+.val{
+    padding: 5px 5px;
+}
+.dash{
+    display: flex;
+    color: whitesmoke;
+    font-size:20px;
+    margin-top: 5px;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+.dash h5{
+    color: rgb(27, 128, 243);
+    padding-left: 3px;
+    font-size: 30px;
+    font-weight:bold;
+    
+}
+.dash i{
+    margin-left:100px;
+    font-size: 19px;
+    margin-top: 5px;
+}
+.val input{
+    background: none;
+    font-size: 17px;
+    border: none;
+    border-bottom: 2px solid rgb(177, 174, 174);
+    color: rgb(5, 0, 0);
+}
+.val button{
+    font-size: 15px;
+    padding:1px 5px;
+    border-radius: 8px;
+    border:1px solid royalblue;
+    background-color: rgb(80, 82, 247);
+    color: white;
+}
+#amt{
+    border: none;
+    background: none;
+    /* border-bottom: 1px solid rgb(99, 98, 98); */
+    margin:5px 100px;
+    padding-top: 5px;
+    color: rgb(243, 39, 56);
+    font-weight: bold;
+    font-size: 15px;
+}
+nav{
+    background-color: rgb(15, 31, 44);
+    position:fixed;
+    height:900px;
+    width:250px;
+  }
+  ul > li{
+    list-style: none;
+ }
+ ul > li:nth-child(1){
+    padding-top: 50px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid rgb(68, 68, 68);
+    box-shadow: 0 1px rgba(0,0,0,.5);
+ }
+ ul > li:nth-child(2){
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid rgb(66,66,66);
+    box-shadow: 0 1px rgba(0,0,0,.5);
+ }
+ ul > li:nth-child(3){
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid rgb(66,66,66);
+    box-shadow: 0 1px rgba(0,0,0,.5);
+ }
+ ul > li:nth-child(4){
+    padding-top:20px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid rgb(66,66,66);
+    box-shadow: 0 1px rgba(0,0,0,0.5);
+ }
+ ul > li:nth-child(5){
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid rgb(66, 66, 66);
+    box-shadow: 0 1px rgba(0,0,0,.5);
+ }
+ li > i{
+    color:rgb(78, 140, 221);
+ }
+ li > a{
+    color:rgb(56, 55, 55);
+ }
+ li > a:hover{
+    color: rgb(116, 245, 245);
+    background-color: rgba(250,250,250,.1);
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 10px;
+ } 
+ li > a{
+    color:rgb(247, 246, 246);
+    text-decoration: none;
+    font-size: 17px;
+ }
+ .content input{
+    border-radius:8px;
+    background: none;
+ }
+ ul > li{
+    list-style: none;    
+ }
+ .content{
+    margin-left:250px;
+    
+ }
+ .slot h4{
+    background-color:#318adf;
+    padding: 5px;
+    color: rgb(244, 246, 248);
+    text-align: center;
+    font-size:20px;
+    font-weight: lighter;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ .slot h3{
+   margin-left:55px;
+    padding-top: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size:30px;
+    color: white;
+ }
+ .slot i{
+    position: absolute;
+    top: 48px;
+    left:270px;
+    color: #3493e0;
+    font-size:27px;
+ }
+ .avail{
+    font-size:18px;
+    color: whitesmoke;
+ }
+ .avail button{
+    background-color:#30975e;
+    color: rgb(250, 248, 248);
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px;
+ }
+ .avail p{
+    margin-top: 20px;
+    padding-left: 5px;
+   
+    
+ }
+ .booked p{
+    margin-top: 21px;
+    padding-left: 5px;
+    
+ }
+.booked{
+    position: absolute;
+    top: 75px;
+    left: 390px;
+    font-size: 18px;
+    color: whitesmoke;
+}
+.booked button{
+    background-color: #d62130;
+    color: rgb(250, 248, 248);
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 7px;
+}
+.section-a p{
+    margin-top:20px;
+   /* border-radius:25px ; */
+   
+   /* background: linear-gradient(to right,rgb(23, 54, 94),rgb(62, 102, 163)); */
+   padding: 5px;
+   color:rgb(221, 224, 224);
+   font-size: 22px;
+   font-weight: bold;
+   margin-left: 20px;
+}
+.section-a button{
+    margin-left:15px;
+    margin-top: 20px;
+    background-color: #228a56;
+    border: none;
+    font-size:16px;
+    border-radius: 10px;
+    padding: 2px 5px;
+    color: rgb(252, 250, 250);
+    border: 1px solid #30975e;
+    
+}
+.section-a input{
+   margin-left: 3px;
+   color: #011f4d;
+   
+}
+.all{
+    margin-top:20px;
+}
+#slot4{
+    background-color: #d62130;
+    border: none;
+    border: 1px solid #d62130;
+}
+#check4{
+    visibility:hidden;
+}
+#slot7{
+    background-color: #d62130;
+    border: none;
+    border: 1px solid #d62130;
+}
+#check7{
+    visibility:hidden;
+}
+.section-b p{
+    margin-top: 20px;
+    /* background-color:#2a75d6; */
+    /* background: linear-gradient(to right,rgb(23, 54, 94),rgb(62, 102, 163)); */
+   padding: 5px;
+   color:rgb(237, 241, 241);
+   font-size:22px;
+   font-weight: bold;
+   margin-left: 20px;
+   
+}
+.section-b button{
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color: #1d864c;
+    border: none;
+    font-size:16px;
+    border-radius: 10px;
+    padding: 2px 5px;
+    color: white;
+    border: 1px solid #30975e;
+}
+.section-b input{
+    margin-left: 3px;
+    color: #011f4d;
+ }
+ .allb{
+    margin-top:20px;
+ }
+ #slot12{
+    background-color: #d62130;
+    border: none;
+    border: 1px solid #d62130;
+}
+#check12{
+    visibility:hidden;
+}
+#slot18{
+    background-color: #d62130;
+    border: none;
+    border: 1px solid #d62130;
+}
+#check18{
+    visibility:hidden;
+}
+.select{
+    margin-left:200px;
+    height: 350px;
+    width:600px;
+    /* background: linear-gradient(to right,rgb(1, 25, 36),rgb(30, 85, 99)); */
+    border-radius: 25px;
+    background-color:rgba(252, 249, 249, 0.1);
+    box-shadow: 1px 1px 5px rgb(116, 245, 245);
+}
+.content{
+    background-color: rgba(0,0,0,.7);
+    height:670px;
+}
+form{
+    margin-top: 10px;
+    color:rgb(46, 44, 44);
+    font-weight:lighter;
+    background-color: rgb(242, 243, 245);
+    min-height:55%;
+}
+form p{
+    color: rgb(38, 101, 236);
+    font-size: 24px;
+    text-align: center;
+   font-weight:bold;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   letter-spacing: 1px;
+   word-spacing: 2px;
+   padding-top: 10px;
+}
+.form {
+    margin-left: 25px;
+    padding: 5px;
+   
+}
+.name{
+    margin: 8px 0 0 25px;
+}
+.mobile{
+    margin: 8px 0 0 25px;
+}
+.slotno{
+    margin: 8px 0 0 25px;
+}
+.arrive{
+    margin: 8px 0 0 25px;
+}
+.date{
+    margin: 8px 0 0 25px;
+}
+.form label{
+    font-size: 18px;
+}
+
+.btn{
+    position: absolute;
+    left: 700px;
+    top: 800px;
+}
+.form input{
+    border: none;
+    border-bottom: 1px solid rgb(27, 27, 27);
+    background: none;
+    font-size: 20px;
+}
+.form i{
+    color: royalblue;
+   
+}
+.arrive input{
+    border-bottom: none;
+}
+.btn button{
+    background-color:rgb(47, 91, 224);
+    color: white;
+    border: none;
+    padding: 3px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+   </style>
+</body>
+</html>

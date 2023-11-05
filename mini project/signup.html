@@ -1,0 +1,152 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="signup.css">
+    </head>
+    
+    <body>
+      <div class="hole">
+        
+       
+        <!-- <main>
+          <div>
+              
+               <a href="/login.html" id="first">Login <i class="fa-solid fa-right-to-bracket" id="log"></i></a>
+            </div>
+            <div>
+              
+              <a href="/signup.html" id="second">Signup <i class="fa-solid fa-user-plus" id="sign"></i></a>
+              </div>
+          
+      </main> -->
+        <form method="post" onsubmit="return sign()" action="register.php">
+          <header>User Sign Up</header>
+          <div class="user">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="user" placeholder="Username" name="name">
+           <div id="usererror" class="alert">
+            </div>
+          </div>
+          <div class="email">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" placeholder="Email" name="email">
+            <div id="emailerror" class="alert"></div>
+          </div>
+          <div class="password">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" id="password" placeholder="Password" name="password">
+            <div id="passerror" class="alert"></div>
+          </div>
+          <div class="confirm">
+            <i class="fa-solid fa-unlock"></i>
+            <input type="password" id="confirm" placeholder="Confirm Password" name="confirm">
+            <div id="confirmerror" class="alert"></div>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="checkbox"><label for="checkbox">Remeber me</label>
+          </div>
+          <div class="btn">
+            <button type="submit" id="btn">Submit<i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="log">
+            <label for="">Already a user?</label><a href="/login.html">Sign in</a>
+          </div>
+         
+        </form>
+       
+        </div>
+        
+      
+    <script>
+      function sign(){
+    let user=document.getElementById('user').value;
+    let email=document.getElementById('email').value;
+    let password=document.getElementById('password').value;
+    let confirm=document.getElementById('confirm').value;
+    
+      if(user==="" || user===null){
+    
+       let usererror=document.getElementById('usererror');
+       usererror.innerHTML="**Enter the username..";
+       let user=document.getElementById('user');
+       user.style.borderBottom='2px solid rgb(247, 45, 45)';
+       usererror.style.fontWeight='bold';
+       return false;
+     }
+      else{
+      let user=document.getElementById('user');
+      user.style.borderBottom='2px solid rgb(10,250,130)';
+      let usererror=document.getElementById('usererror');
+      usererror.innerHTML=null;
+     }
+     
+      if(email==="" || email===null){
+      let emailerror=document.getElementById('emailerror');
+      emailerror.innerHTML="**Enter the email..";
+      let email=document.getElementById('email');
+      email.style.borderBottom='2px solid rgb(247, 45, 45)';
+      emailerror.style.fontWeight='bold';
+      return false;
+    }
+    else{
+      let email=document.getElementById('email');
+      email.style.borderBottom='2px solid rgb(10,250,130)';
+      let emailerror=document.getElementById('emailerror');
+      emailerror.innerHTML=null;
+    }
+     if(password==="" || password===null){
+      let passworderror=document.getElementById('passerror');
+      passworderror.innerHTML="**Enter the password..";
+      let password=document.getElementById('password');
+      password.style.borderBottom='2px solid rgb(247, 45, 45)';
+      passworderror.style.fontWeight='bold';
+      return false;
+    }
+     else{
+      let password=document.getElementById('password');
+      password.style.borderBottom='2px solid rgb(10,250,133)';
+      let passworderror=document.getElementById('passerror');
+      passworderror.innerHTML=null;
+    }
+     if(confirm==="" || confirm===null){
+      let confirmerror=document.getElementById('confirmerror');
+      confirmerror.innerHTML="**Enter the confirm password..";
+      let confirm=document.getElementById('confirm');
+      confirm.style.borderBottom='2px solid rgb(247, 45, 45)';
+      confirmerror.style.fontWeight='bold';
+      return false;
+     }
+     else if(password !== confirm){
+      let confirmerror=document.getElementById('confirmerror');
+      confirmerror.innerHTML="**Password does not match..";
+      let confirm=document.getElementById('confirm');
+      confirm.style.borderBottom='2px solid rgb(247, 45, 45)';
+      return false;
+    }
+      else{
+      let confirm=document.getElementById('confirm');
+      confirm.style.borderBottom='2px solid rgb(10,250,130)';
+      let confirmerror=document.getElementById('confirmerror');
+      confirmerror.innerHTML=null;
+      return true;
+    }
+  
+  
+   
+  }
+  
+  
+  
+    </script>
+    
+    </body>
+    </html>
+
+
+

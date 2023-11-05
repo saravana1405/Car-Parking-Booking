@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Labrada&family=Montserrat:ital@1&family=Pacifico&display=swap');
+ /* font-family: 'Babylonica', cursive;
+font-family: 'Labrada', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+body{
+    color: white;
+    background-image: url("./images/carback.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+form{
+    border: 1px solid rgb(247, 244, 244);
+    width:350px;
+    position: relative;
+    top: 35vh;  
+    left:40vw;
+    background-color: rgb(223, 223, 224); 
+    border-radius:10px; 
+    /* border-color:rgba(11,16,59) ; */
+    /* box-shadow:2px 2px 10px rgba(250,250,250,.5); */
+}
+.hole{
+   
+     background-color: rgba(0,0,0,.8); 
+    height: 100vh;
+}
+form > header{
+    font-size :1.5em;
+    margin: 10px;
+    text-align: center;
+    /* font-family: 'Babylonica', cursive;
+    font-family: 'Labrada', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;  */
+    font-weight: bold;
+    color: rgb(48, 107, 235);
+}
+#user{
+    margin:5px;
+    font-size:18px;
+    
+    color:rgb(18, 19, 19);
+    height: 23px;
+    border: none;
+    border-bottom: 2px solid rgb(119, 121, 121);
+    background: none;
+    width: max-content;
+}
+#email{
+    margin:5px;
+    margin-right: 4px;
+    font-size: 18px;
+    /* background-color: rgb(219, 214, 214); */
+    color:rgb(32, 32, 32);
+    height: 23px;
+    border: none;
+    border-bottom: 2px solid rgb(119, 120, 121);
+    background: none;
+}
+#password{
+    margin:5px;
+    margin-right: 4px;
+    font-size: 18px;
+    /* background-color: rgb(219, 214, 214); */
+    color:rgb(40, 41, 41);
+    height: 23px;
+    border: none;
+    border-bottom: 2px solid rgb(113, 115, 116);
+    background: none;
+}
+#confirm{
+    margin:5px;
+    font-size: 18px;
+    /* background-color: rgb(219, 214, 214); */
+    color:rgb(39, 39, 39);
+    height: 23px;
+    border: none;
+    border-bottom: 2px solid rgb(119, 120, 121);
+    background: none;
+}
+.user > i{
+    color:rgb(47, 82, 237);
+    padding: 3px;
+    margin-top:4px;
+    margin-left:5px;
+    font-size: 18px;
+}
+.email > i{
+    color:rgb(48, 82, 237);
+    padding: 3px;
+    margin-top:5px;
+    margin-left:5px;
+    font-size: 18px;
+    
+}
+.password > i{
+    color:rgb(40, 82, 233);
+    padding: 3px;
+    margin-top:5px;
+    margin-left:5px;
+    font-size: 18px;
+}
+.confirm > i{
+    color:rgb(40, 85, 237);
+    padding: 3px;
+    margin-top:5px;
+    margin-left:5px;
+    font-size: 18px;
+}
+.check{
+    margin: 5px;
+    margin-top:8px;
+}
+#checkbox{
+    margin-left: 5px;
+    margin: 5px;
+    box-shadow: 1px 1px 3px gray;    
+}
+.check > label{
+    color: rgb(75, 74, 74);
+    font-size: 18px;
+}
+.btn{
+    margin: 5px 130px;
+    padding-top: 5px;
+    
+}
+.btn button{
+    background-color: rgb(52, 93, 243);
+    font-size: 16px;
+    color:rgb(212, 209, 209);
+    font-weight: bold;
+    padding: 3px 15px;
+    border: none;
+    border-radius: 10px;
+}
+.log{
+    margin: 10px 10px;
+   padding: 5px;
+    /* background-color: rgba(36, 2, 2, 0.3); */
+    
+    
+}
+.log label{
+    color:rgb(53, 53, 53);
+    margin-left: 5px;
+    padding: 5px;
+    padding-left: 5px;
+    margin-top: 5px;
+    font-family: 'Babylonica', cursive;
+    font-family: 'Labrada', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+.log a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: rgb(137, 20, 247);
+    font-weight: 800;
+    /* border-bottom: 1px solid rgb(66, 66, 66); */
+}
+.log a:hover{
+    color:rgb(4,47,235);
+    border-bottom: 2px solid rgb(4, 47, 235);
+}
+.btn button:hover{
+   color: rgb(250, 248, 248);
+   font-weight: bold;
+   background-color: rgb(4, 47, 235);
+   border: 1px solid rgb(167, 165, 165);
+}
+.alert{
+    color: rgb(233, 34, 34);
+    margin-left: 15px;
+    font-size: 14px;
+     
+    
+}
+#first{
+    color:rgb(18, 70, 243);
+    position: absolute;
+    top:2px;
+    left: 60vw;
+    text-decoration: none;
+    font-size: 17px;
+    border: 1px solid black;
+    padding: 3px 20px;
+    background-color: rgb(236, 232, 232);
+    border-radius: 10px;
+    border: none;
+ }
+ #first:hover{
+    color: white;
+    background-color: rgb(59, 55, 248);
+ }
+ #second:hover{
+    color: white;
+    background-color: rgb(59, 55, 248);
+ }
+ #second{
+    color: rgb(18, 70, 240);
+    position: absolute;
+    top:2px;
+    left: 80vw;
+    text-decoration: none;
+    font-size: 17px;
+    border: 1px solid black;
+    padding: 3px 20px;
+    background-color:rgb(238, 234, 234) ;
+    border-radius: 10px;
+    border: none;
+ }
+ /* #red{
+    position: absolute;
+    visibility: hidden;
+    
+ } */
+

@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+   
+}
+body{
+    background-image: url('/images/mancar.jpg');
+   
+    background-position:center;
+    
+}
+.val{
+    padding: 5px 5px;
+}
+.dash{
+    display: flex;
+    color: whitesmoke;
+    font-size:20px;
+    margin-top: 5px;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+.dash h5{
+    color: rgb(27, 128, 243);
+    padding-left: 3px;
+    font-size: 30px;
+    font-weight:bold;
+    
+}
+.dash i{
+    margin-left:100px;
+    font-size: 19px;
+    margin-top: 5px;
+}
+.val input{
+    background: none;
+    font-size: 17px;
+    border: none;
+    border-bottom: 2px solid rgb(177, 174, 174);
+    color: rgb(5, 0, 0);
+}
+.val button{
+    font-size: 15px;
+    padding:1px 5px;
+    border-radius: 8px;
+    border:1px solid royalblue;
+    background-color: rgb(80, 82, 247);
+    color: white;
+}
+#amt{
+    border: none;
+    background: none;
+    /* border-bottom: 1px solid rgb(99, 98, 98); */
+    margin:5px 100px;
+    padding-top: 5px;
+    color: rgb(243, 39, 56);
+    font-weight: bold;
+    font-size: 15px;
+}
+nav{
+    background-color: rgb(15, 31, 44);
+    position:absolute;
+    height:900px;
+    width:250px;
+  }
+  ul > li{
+    list-style: none;
+ }
+ ul > li:nth-child(1){
+    padding-top: 50px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid rgb(68, 68, 68);
+    box-shadow: 0 1px rgba(0,0,0,.5);
+ }
+ ul > li:nth-child(2){
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid rgb(66,66,66);
+    box-shadow: 0 1px rgba(0,0,0,.5);
+ }
+ ul > li:nth-child(3){
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid rgb(66,66,66);
+    box-shadow: 0 1px rgba(0,0,0,.5);
+ }
+ ul > li:nth-child(4){
+    padding-top:20px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid rgb(66,66,66);
+    box-shadow: 0 1px rgba(0,0,0,0.5);
+ }
+ ul > li:nth-child(5){
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid rgb(66, 66, 66);
+    box-shadow: 0 1px rgba(0,0,0,.5);
+ }
+ li > i{
+    color:rgb(78, 140, 221);
+ }
+ li > a{
+    color:rgb(56, 55, 55);
+ }
+ li > a:hover{
+    color: rgb(116, 245, 245);
+    background-color: rgba(250,250,250,.1);
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 10px;
+ } 
+ li > a{
+    color:rgb(247, 246, 246);
+    text-decoration: none;
+    font-size: 17px;
+ }
+ ul > li{
+    list-style: none;    
+ }
+ .content{
+    margin-left:250px;
+    
+ }
+ .slot h4{
+    background-color:#318adf;
+    padding: 5px;
+    color: rgb(244, 246, 248);
+    text-align: center;
+    font-size:20px;
+    font-weight: lighter;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ .slot h3{
+   margin-left:55px;
+    padding-top: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size:30px;
+    color: white;
+ }
+ .slot i{
+    position: absolute;
+    top: 48px;
+    left:270px;
+    color: #3493e0;
+    font-size:27px;
+ }
+ .avail{
+    font-size:18px;
+    color: whitesmoke;
+ }
+ .avail button{
+    background-color:#30975e;
+    color: rgb(250, 248, 248);
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px;
+ }
+ .avail p{
+    margin-top: 20px;
+    padding-left: 5px;
+   
+    
+ }
+ .booked p{
+    margin-top: 21px;
+    padding-left: 5px;
+    
+ }
+.booked{
+    position: absolute;
+    top: 75px;
+    left: 390px;
+    font-size: 18px;
+    color: whitesmoke;
+}
+.booked button{
+    background-color: #d62130;
+    color: rgb(250, 248, 248);
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 7px;
+}
+.section-a p{
+    margin-top:20px;
+   /* border-radius:25px ; */
+   
+   /* background: linear-gradient(to right,rgb(23, 54, 94),rgb(62, 102, 163)); */
+   padding: 5px;
+   color:rgb(221, 224, 224);
+   font-size: 22px;
+   font-weight: bold;
+   margin-left: 20px;
+}
+.section-a button{
+    margin-left:15px;
+    margin-top: 20px;
+    background-color: #228a56;
+    border: none;
+    font-size:16px;
+    border-radius: 10px;
+    padding: 2px 5px;
+    color: rgb(252, 250, 250);
+    border: 1px solid #30975e;
+    
+}
+.section-a input{
+   margin-left: 3px;
+   color: #011f4d;
+   
+}
+.all{
+    margin-top:20px;
+}
+#slot4{
+    background-color: #d62130;
+    border: none;
+    border: 1px solid #d62130;
+}
+#check4{
+    visibility:hidden;
+}
+#slot7{
+    background-color: #d62130;
+    border: none;
+    border: 1px solid #d62130;
+}
+#check7{
+    visibility:hidden;
+}
+.section-b p{
+    margin-top: 20px;
+    /* background-color:#2a75d6; */
+    /* background: linear-gradient(to right,rgb(23, 54, 94),rgb(62, 102, 163)); */
+   padding: 5px;
+   color:rgb(237, 241, 241);
+   font-size:22px;
+   font-weight: bold;
+   margin-left: 20px;
+   
+}
+.section-b button{
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color: #1d864c;
+    border: none;
+    font-size:16px;
+    border-radius: 10px;
+    padding: 2px 5px;
+    color: white;
+    border: 1px solid #30975e;
+}
+.section-b input{
+    margin-left: 3px;
+    color: #011f4d;
+ }
+ .allb{
+    margin-top:20px;
+ }
+ #slot12{
+    background-color: #d62130;
+    border: none;
+    border: 1px solid #d62130;
+}
+#check12{
+    visibility:hidden;
+}
+#slot18{
+    background-color: #d62130;
+    border: none;
+    border: 1px solid #d62130;
+}
+#check18{
+    visibility:hidden;
+}
+.select{
+    margin-left:200px;
+    height: 350px;
+    width:600px;
+    /* background: linear-gradient(to right,rgb(1, 25, 36),rgb(30, 85, 99)); */
+    border-radius: 25px;
+    background-color:rgba(252, 249, 249, 0.1);
+    box-shadow: 1px 1px 5px rgb(116, 245, 245);
+}
+.content{
+    background-color: rgba(0,0,0,.7);
+    height:670px;
+}
+form{
+    margin-top: 10px;
+    color:rgb(54, 54, 54);
+    font-weight: bold;
+    background-color: rgb(10, 19, 34);
+    height:55%;
+}
+form p{
+    color: rgb(38, 101, 236);
+    font-size: 24px;
+    text-align: center;
+   font-weight:bold;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   letter-spacing: 1px;
+   word-spacing: 2px;
+   padding-top: 10px;
+}
+.form{
+    margin-left: 20px;
+    padding: 5px;
+   
+}
+.form label{
+    font-size: 18px;
+}
+.name{
+  position: absolute;
+  left: 400px;
+  top: 600px;
+}
+.mobile{
+    position: absolute;
+    left:800px;
+    top: 600px;
+}
+.date{
+    position: absolute;
+    left: 400px;
+    top: 650px;
+}
+.slotno{
+    position: absolute;
+    left: 800px;
+    top: 650px;
+}
+.arrive{
+    position: absolute;
+    left: 600px;
+    top: 700px;
+}
+.btn{
+    position: absolute;
+    left: 700px;
+    top: 800px;
+}
+.form input{
+    border: none;
+    border-bottom: 2px solid rgb(77, 77, 77);
+    background: none;
+    font-size: 20px;
+}
+.form i{
+    color: royalblue;
+   
+}
+.arrive input{
+    border-bottom: none;
+}
+.btn button{
+    background-color:rgb(47, 91, 224);
+    color: white;
+    border: none;
+    padding: 3px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
